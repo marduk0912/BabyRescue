@@ -3,31 +3,53 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1813417E24FC3B0700C8BE17 /* GameScene1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1813417D24FC3B0700C8BE17 /* GameScene1.swift */; };
+		1813418024FC3F5600C8BE17 /* GameScene2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1813417F24FC3F5500C8BE17 /* GameScene2.swift */; };
+		1813418224FC3F6C00C8BE17 /* GameScene3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1813418124FC3F6C00C8BE17 /* GameScene3.swift */; };
+		1813418424FC42F100C8BE17 /* WinScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1813418324FC42F100C8BE17 /* WinScene.swift */; };
 		188C0D0624EDB0BC00D7F82D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188C0D0524EDB0BC00D7F82D /* AppDelegate.swift */; };
-		188C0D0824EDB0BC00D7F82D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 188C0D0724EDB0BC00D7F82D /* GameScene.sks */; };
-		188C0D0A24EDB0BC00D7F82D /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 188C0D0924EDB0BC00D7F82D /* Actions.sks */; };
 		188C0D0C24EDB0BD00D7F82D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188C0D0B24EDB0BD00D7F82D /* GameScene.swift */; };
 		188C0D0E24EDB0BD00D7F82D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188C0D0D24EDB0BD00D7F82D /* GameViewController.swift */; };
 		188C0D1124EDB0BD00D7F82D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188C0D0F24EDB0BD00D7F82D /* Main.storyboard */; };
 		188C0D1324EDB0DA00D7F82D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 188C0D1224EDB0DA00D7F82D /* Assets.xcassets */; };
 		188C0D1624EDB0DA00D7F82D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 188C0D1424EDB0DA00D7F82D /* LaunchScreen.storyboard */; };
+		188C1C2C24F874020060F1F9 /* CHICORY.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 188C1C2B24F874010060F1F9 /* CHICORY.ttf */; };
+		188C1C2E24F8742B0060F1F9 /* 04B30.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 188C1C2D24F8742B0060F1F9 /* 04B30.TTF */; };
+		1898239824EF39D700F75AD3 /* Snake Jacket.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1898239624EF39B500F75AD3 /* Snake Jacket.ttf */; };
+		1898239A24EF466800F75AD3 /* GameOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1898239924EF466800F75AD3 /* GameOver.swift */; };
+		1898239C24EF48ED00F75AD3 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1898239B24EF48ED00F75AD3 /* MainMenu.swift */; };
+		189D217D2508565E00872413 /* FinishScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189D217C2508565E00872413 /* FinishScene.swift */; };
+		18BF89B024EEFEA800D3B82D /* RandomUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF89AF24EEFEA800D3B82D /* RandomUtils.swift */; };
+		6F9E43500962C55D0EEFA08B /* Pods_BabyRescue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CCFDDDB49DC2786F25FD652 /* Pods_BabyRescue.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1813417D24FC3B0700C8BE17 /* GameScene1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene1.swift; sourceTree = "<group>"; };
+		1813417F24FC3F5500C8BE17 /* GameScene2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene2.swift; sourceTree = "<group>"; };
+		1813418124FC3F6C00C8BE17 /* GameScene3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene3.swift; sourceTree = "<group>"; };
+		1813418324FC42F100C8BE17 /* WinScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinScene.swift; sourceTree = "<group>"; };
 		188C0D0224EDB0BC00D7F82D /* BabyRescue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabyRescue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		188C0D0524EDB0BC00D7F82D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		188C0D0724EDB0BC00D7F82D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		188C0D0924EDB0BC00D7F82D /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		188C0D0B24EDB0BD00D7F82D /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		188C0D0D24EDB0BD00D7F82D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		188C0D1024EDB0BD00D7F82D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		188C0D1224EDB0DA00D7F82D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		188C0D1524EDB0DA00D7F82D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		188C0D1724EDB0DA00D7F82D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		188C1C2B24F874010060F1F9 /* CHICORY.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CHICORY.ttf; sourceTree = "<group>"; };
+		188C1C2D24F8742B0060F1F9 /* 04B30.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = 04B30.TTF; sourceTree = "<group>"; };
+		1898239624EF39B500F75AD3 /* Snake Jacket.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Snake Jacket.ttf"; sourceTree = "<group>"; };
+		1898239924EF466800F75AD3 /* GameOver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOver.swift; sourceTree = "<group>"; };
+		1898239B24EF48ED00F75AD3 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		189D217C2508565E00872413 /* FinishScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishScene.swift; sourceTree = "<group>"; };
+		18BF89AF24EEFEA800D3B82D /* RandomUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomUtils.swift; sourceTree = "<group>"; };
+		39411DB99EC48ED947DBB062 /* Pods-BabyRescue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabyRescue.debug.xcconfig"; path = "Target Support Files/Pods-BabyRescue/Pods-BabyRescue.debug.xcconfig"; sourceTree = "<group>"; };
+		5CCFDDDB49DC2786F25FD652 /* Pods_BabyRescue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BabyRescue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3257DD0522ACB0F9E381CFB /* Pods-BabyRescue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabyRescue.release.xcconfig"; path = "Target Support Files/Pods-BabyRescue/Pods-BabyRescue.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F9E43500962C55D0EEFA08B /* Pods_BabyRescue.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +69,8 @@
 			children = (
 				188C0D0424EDB0BC00D7F82D /* BabyRescue */,
 				188C0D0324EDB0BC00D7F82D /* Products */,
+				EFC5EFDABDC6DE536861FC78 /* Pods */,
+				B3AA6863C18B5A0E8C6313D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,10 +85,19 @@
 		188C0D0424EDB0BC00D7F82D /* BabyRescue */ = {
 			isa = PBXGroup;
 			children = (
+				188C1C2D24F8742B0060F1F9 /* 04B30.TTF */,
+				188C1C2B24F874010060F1F9 /* CHICORY.ttf */,
+				1898239624EF39B500F75AD3 /* Snake Jacket.ttf */,
+				18BF89AF24EEFEA800D3B82D /* RandomUtils.swift */,
 				188C0D0524EDB0BC00D7F82D /* AppDelegate.swift */,
-				188C0D0724EDB0BC00D7F82D /* GameScene.sks */,
-				188C0D0924EDB0BC00D7F82D /* Actions.sks */,
+				1898239B24EF48ED00F75AD3 /* MainMenu.swift */,
 				188C0D0B24EDB0BD00D7F82D /* GameScene.swift */,
+				1813417D24FC3B0700C8BE17 /* GameScene1.swift */,
+				1813417F24FC3F5500C8BE17 /* GameScene2.swift */,
+				1813418124FC3F6C00C8BE17 /* GameScene3.swift */,
+				1813418324FC42F100C8BE17 /* WinScene.swift */,
+				1898239924EF466800F75AD3 /* GameOver.swift */,
+				189D217C2508565E00872413 /* FinishScene.swift */,
 				188C0D0D24EDB0BD00D7F82D /* GameViewController.swift */,
 				188C0D0F24EDB0BD00D7F82D /* Main.storyboard */,
 				188C0D1224EDB0DA00D7F82D /* Assets.xcassets */,
@@ -73,6 +107,23 @@
 			path = BabyRescue;
 			sourceTree = "<group>";
 		};
+		B3AA6863C18B5A0E8C6313D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5CCFDDDB49DC2786F25FD652 /* Pods_BabyRescue.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFC5EFDABDC6DE536861FC78 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39411DB99EC48ED947DBB062 /* Pods-BabyRescue.debug.xcconfig */,
+				B3257DD0522ACB0F9E381CFB /* Pods-BabyRescue.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 188C0D1A24EDB0DA00D7F82D /* Build configuration list for PBXNativeTarget "BabyRescue" */;
 			buildPhases = (
+				038F4418AA1088EDF3200363 /* [CP] Check Pods Manifest.lock */,
 				188C0CFE24EDB0BC00D7F82D /* Sources */,
 				188C0CFF24EDB0BC00D7F82D /* Frameworks */,
 				188C0D0024EDB0BC00D7F82D /* Resources */,
+				5E605BF9033C3CE86D7B0EC6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,15 +184,58 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1898239824EF39D700F75AD3 /* Snake Jacket.ttf in Resources */,
 				188C0D1124EDB0BD00D7F82D /* Main.storyboard in Resources */,
-				188C0D0824EDB0BC00D7F82D /* GameScene.sks in Resources */,
+				188C1C2C24F874020060F1F9 /* CHICORY.ttf in Resources */,
 				188C0D1324EDB0DA00D7F82D /* Assets.xcassets in Resources */,
+				188C1C2E24F8742B0060F1F9 /* 04B30.TTF in Resources */,
 				188C0D1624EDB0DA00D7F82D /* LaunchScreen.storyboard in Resources */,
-				188C0D0A24EDB0BC00D7F82D /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		038F4418AA1088EDF3200363 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BabyRescue-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E605BF9033C3CE86D7B0EC6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BabyRescue/Pods-BabyRescue-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BabyRescue/Pods-BabyRescue-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BabyRescue/Pods-BabyRescue-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		188C0CFE24EDB0BC00D7F82D /* Sources */ = {
@@ -147,7 +243,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				188C0D0C24EDB0BD00D7F82D /* GameScene.swift in Sources */,
+				1813418424FC42F100C8BE17 /* WinScene.swift in Sources */,
+				1813417E24FC3B0700C8BE17 /* GameScene1.swift in Sources */,
+				189D217D2508565E00872413 /* FinishScene.swift in Sources */,
+				1898239C24EF48ED00F75AD3 /* MainMenu.swift in Sources */,
+				1813418224FC3F6C00C8BE17 /* GameScene3.swift in Sources */,
 				188C0D0E24EDB0BD00D7F82D /* GameViewController.swift in Sources */,
+				18BF89B024EEFEA800D3B82D /* RandomUtils.swift in Sources */,
+				1813418024FC3F5600C8BE17 /* GameScene2.swift in Sources */,
+				1898239A24EF466800F75AD3 /* GameOver.swift in Sources */,
 				188C0D0624EDB0BC00D7F82D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,6 +394,7 @@
 		};
 		188C0D1B24EDB0DA00D7F82D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39411DB99EC48ED947DBB062 /* Pods-BabyRescue.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -308,6 +413,7 @@
 		};
 		188C0D1C24EDB0DA00D7F82D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3257DD0522ACB0F9E381CFB /* Pods-BabyRescue.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

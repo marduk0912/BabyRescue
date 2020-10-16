@@ -1,5 +1,5 @@
 //
-//  GameScene.swift
+//  GameScene1.swift
 //  BabyRescue
 //
 //  Created by Fernando on 19/08/2020.
@@ -9,7 +9,7 @@
 import SpriteKit
 import GameplayKit
 
-class GameScene: SKScene, SKPhysicsContactDelegate {
+class GameScene1: SKScene, SKPhysicsContactDelegate {
     
     var background: SKSpriteNode!
     var player: SKSpriteNode!
@@ -33,17 +33,17 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
        playableArea = CGRect(x: 0, y: playableMargin, width: size.width, height: playableHeight)
            
        super.init(size: size)
+        
         addObserver()
        }
-
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-        
     }
+    
     deinit {
-           NotificationCenter.default.removeObserver(self)
-       }
-       
+        NotificationCenter.default.removeObserver(self)
+    }
     
     override func didMove(to view: SKView) {
            
@@ -55,13 +55,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             initPlayer()
             initFonts()
         
-        run(SKAction.repeatForever(SKAction.sequence([SKAction.run(addEscombro), SKAction.wait(forDuration: 1.5)])))
-        run(SKAction.repeatForever(SKAction.sequence([SKAction.run(addCachorro), SKAction.wait(forDuration: 1.0)])))
+        run(SKAction.repeatForever(SKAction.sequence([SKAction.run(addEscombro), SKAction.wait(forDuration: 1.0)])))
+        run(SKAction.repeatForever(SKAction.sequence([SKAction.run(addCachorro), SKAction.wait(forDuration: 2.0)])))
         }
     
     override func update(_ currentTime: TimeInterval) {
          liveLabel.text = "LIVES  \(lives)"
-         scoreLabel.text = "SCORE  \(score)/10"
+         scoreLabel.text = "SCORE  \(score)/15"
     }
     
     func initFonts(){
@@ -77,15 +77,15 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         scoreLabel.fontColor = SKColor.black
         scoreLabel.fontSize = 75
         scoreLabel.zPosition = 50
-        scoreLabel.text = "SCORE  \(score)/10"
+        scoreLabel.text = "SCORE  \(score)/15"
         scoreLabel.horizontalAlignmentMode = SKLabelHorizontalAlignmentMode.right
-        scoreLabel.position = CGPoint(x: frame.size.width - 300, y: frame.size.height - 200)
+        scoreLabel.position = CGPoint(x: frame.size.width - 300 , y: frame.size.height - 200)
         addChild(scoreLabel)
         
     }
     
     func initBackground(){
-        background = SKSpriteNode(imageNamed: "background")
+        background = SKSpriteNode(imageNamed: "City2")
         background.position = CGPoint(x: playableArea.midX, y: playableArea.midY)
         background.zPosition = -10
         background.scale(to: CGSize(width: playableArea.width, height: playableArea.height))
@@ -137,12 +137,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let duracion: CGFloat = distancia/speed
         
         player.run(SKAction.moveTo(x: touchLocation.x, duration: TimeInterval(duracion)))
-        
-        self.isPaused = false
-        
         }
     
-     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
          let touch = touches.first
                let touchLocation = touch!.location(in: self)
                
@@ -277,20 +274,20 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func youWin(){
-        let winScene = WinScene(size: size, win: true, lvl: 1)
+        let winScene = WinScene(size: size, win: true, lvl: 2)
         let transition = SKTransition.doorway(withDuration: 0.3)
         view?.presentScene(winScene, transition: transition)
     }
     
     func newScene (){
-        if score == 10 {
+        if score == 15 {
             youWin()
         }
     }
-    
+       
 }
 
-extension GameScene{
+extension GameScene1{
     @objc func applicationDidBecomeAvctive(){
         self.isPaused = true
         print("* applicationDidBecomeActive")
@@ -311,6 +308,4 @@ extension GameScene{
         
     }
 }
-
     
-   

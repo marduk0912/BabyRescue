@@ -1,15 +1,16 @@
 //
-//  GameScene.swift
+//  GameScene3.swift
 //  BabyRescue
 //
-//  Created by Fernando on 19/08/2020.
+//  Created by Fernando on 30/08/2020.
 //  Copyright © 2020 Fernando Salvador. All rights reserved.
 //
+
 
 import SpriteKit
 import GameplayKit
 
-class GameScene: SKScene, SKPhysicsContactDelegate {
+class GameScene3: SKScene, SKPhysicsContactDelegate {
     
     var background: SKSpriteNode!
     var player: SKSpriteNode!
@@ -20,7 +21,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     let liveLabel: SKLabelNode = SKLabelNode(fontNamed: "04B30")
     let scoreLabel: SKLabelNode = SKLabelNode(fontNamed: "04B30")
     
-    var lives = 5
+    var lives = 3
     var score = 0
     
     var playableArea: CGRect
@@ -33,17 +34,17 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
        playableArea = CGRect(x: 0, y: playableMargin, width: size.width, height: playableHeight)
            
        super.init(size: size)
+        
         addObserver()
        }
-
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-        
     }
+    
     deinit {
-           NotificationCenter.default.removeObserver(self)
-       }
-       
+        NotificationCenter.default.removeObserver(self)
+    }
     
     override func didMove(to view: SKView) {
            
@@ -55,13 +56,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             initPlayer()
             initFonts()
         
-        run(SKAction.repeatForever(SKAction.sequence([SKAction.run(addEscombro), SKAction.wait(forDuration: 1.5)])))
-        run(SKAction.repeatForever(SKAction.sequence([SKAction.run(addCachorro), SKAction.wait(forDuration: 1.0)])))
+        run(SKAction.repeatForever(SKAction.sequence([SKAction.run(addEscombro), SKAction.wait(forDuration: 0.4)])))
+        run(SKAction.repeatForever(SKAction.sequence([SKAction.run(addCachorro), SKAction.wait(forDuration: 4.0)])))
         }
     
     override func update(_ currentTime: TimeInterval) {
          liveLabel.text = "LIVES  \(lives)"
-         scoreLabel.text = "SCORE  \(score)/10"
+         scoreLabel.text = "SCORE  \(score)/30"
     }
     
     func initFonts(){
@@ -77,15 +78,15 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         scoreLabel.fontColor = SKColor.black
         scoreLabel.fontSize = 75
         scoreLabel.zPosition = 50
-        scoreLabel.text = "SCORE  \(score)/10"
+        scoreLabel.text = "SCORE  \(score)/30"
         scoreLabel.horizontalAlignmentMode = SKLabelHorizontalAlignmentMode.right
-        scoreLabel.position = CGPoint(x: frame.size.width - 300, y: frame.size.height - 200)
+        scoreLabel.position = CGPoint(x: frame.size.width - 300 , y: frame.size.height - 200)
         addChild(scoreLabel)
         
     }
     
     func initBackground(){
-        background = SKSpriteNode(imageNamed: "background")
+        background = SKSpriteNode(imageNamed: "City4")
         background.position = CGPoint(x: playableArea.midX, y: playableArea.midY)
         background.zPosition = -10
         background.scale(to: CGSize(width: playableArea.width, height: playableArea.height))
@@ -98,8 +99,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         player.zPosition = 0
         addChild(player)
         
-        
-        
         player.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: player.size.width/2, height: player.size.height/2))
         player.physicsBody?.categoryBitMask = playerCategory
         player.physicsBody?.collisionBitMask = 0
@@ -110,8 +109,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
        for i in 0...1{
                   texture.append(SKTexture(imageNamed: "player\(i)"))
               }
-        
-        
         
         var playerAnimation: SKAction!
         playerAnimation = SKAction.animate(with: texture, timePerFrame: 0.2)
@@ -137,12 +134,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let duracion: CGFloat = distancia/speed
         
         player.run(SKAction.moveTo(x: touchLocation.x, duration: TimeInterval(duracion)))
-        
-        self.isPaused = false
-        
         }
     
-     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
          let touch = touches.first
                let touchLocation = touch!.location(in: self)
                
@@ -276,21 +270,21 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         background.run(actionSeq)
     }
     
-    func youWin(){
-        let winScene = WinScene(size: size, win: true, lvl: 1)
-        let transition = SKTransition.doorway(withDuration: 0.3)
-        view?.presentScene(winScene, transition: transition)
+    func finish(_ finish: Bool) {
+        let finishScene = FinishScene(size: size, finish: finish)
+        let transition = SKTransition.doorsCloseVertical(withDuration: 1.0)
+        view?.presentScene(finishScene, transition: transition)
     }
     
     func newScene (){
-        if score == 10 {
-            youWin()
+        if score == 30 {
+            finish(true)
         }
     }
-    
+       
 }
 
-extension GameScene{
+extension GameScene3{
     @objc func applicationDidBecomeAvctive(){
         self.isPaused = true
         print("* applicationDidBecomeActive")
@@ -311,6 +305,4 @@ extension GameScene{
         
     }
 }
-
     
-   

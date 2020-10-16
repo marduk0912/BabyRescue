@@ -9,33 +9,43 @@
 import UIKit
 import SpriteKit
 import GameplayKit
+import GoogleMobileAds
 
 class GameViewController: UIViewController {
 
+
+    @IBOutlet weak var banner: GADBannerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let view = self.view as! SKView? {
-            // Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: "GameScene") {
-                // Set the scale mode to scale to fit the window
-                scene.scaleMode = .aspectFill
+        //if let view = self.view as! SKView? {
+        let scene = MainMenu(size: CGSize(width: 2048, height: 1152))
+        let view = self.view as! SKView
+        scene.scaleMode = .aspectFill
                 
-                // Present the scene
-                view.presentScene(scene)
-            }
+        // Present the scene
+        view.presentScene(scene)
+   
+        view.ignoresSiblingOrder = true
             
-            view.ignoresSiblingOrder = true
-            
-            view.showsFPS = true
-            view.showsNodeCount = true
-        }
+        view.showsFPS = true
+        view.showsNodeCount = true
+    
+        banner.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        banner.rootViewController = self
+        banner.load(GADRequest())
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(showAdmodBanner), name: NSNotification.Name(rawValue: "showBanner"), object: nil)
+        
+     
+  
     }
 
     override var shouldAutorotate: Bool {
         return true
     }
-
+    
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         if UIDevice.current.userInterfaceIdiom == .phone {
             return .allButUpsideDown
@@ -47,4 +57,8 @@ class GameViewController: UIViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
+    
+    @objc func showAdmodBanner(){
+        self.banner.isHidden = false
+       }
 }
