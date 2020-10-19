@@ -24,6 +24,7 @@
 		1898239C24EF48ED00F75AD3 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1898239B24EF48ED00F75AD3 /* MainMenu.swift */; };
 		189D217D2508565E00872413 /* FinishScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189D217C2508565E00872413 /* FinishScene.swift */; };
 		18BF89B024EEFEA800D3B82D /* RandomUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BF89AF24EEFEA800D3B82D /* RandomUtils.swift */; };
+		18DCA853253E533A00876415 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18DCA852253E533A00876415 /* Default-568h@2x.png */; };
 		6F9E43500962C55D0EEFA08B /* Pods_BabyRescue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CCFDDDB49DC2786F25FD652 /* Pods_BabyRescue.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		1898239B24EF48ED00F75AD3 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		189D217C2508565E00872413 /* FinishScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishScene.swift; sourceTree = "<group>"; };
 		18BF89AF24EEFEA800D3B82D /* RandomUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomUtils.swift; sourceTree = "<group>"; };
+		18DCA852253E533A00876415 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		39411DB99EC48ED947DBB062 /* Pods-BabyRescue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabyRescue.debug.xcconfig"; path = "Target Support Files/Pods-BabyRescue/Pods-BabyRescue.debug.xcconfig"; sourceTree = "<group>"; };
 		5CCFDDDB49DC2786F25FD652 /* Pods_BabyRescue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BabyRescue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3257DD0522ACB0F9E381CFB /* Pods-BabyRescue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabyRescue.release.xcconfig"; path = "Target Support Files/Pods-BabyRescue/Pods-BabyRescue.release.xcconfig"; sourceTree = "<group>"; };
@@ -67,7 +69,8 @@
 		188C0CF924EDB0BC00D7F82D = {
 			isa = PBXGroup;
 			children = (
-				188C0D0424EDB0BC00D7F82D /* PuppyRescue */,
+				18DCA852253E533A00876415 /* Default-568h@2x.png */,
+				188C0D0424EDB0BC00D7F82D /* BabyRescue */,
 				188C0D0324EDB0BC00D7F82D /* Products */,
 				EFC5EFDABDC6DE536861FC78 /* Pods */,
 				B3AA6863C18B5A0E8C6313D3 /* Frameworks */,
@@ -82,7 +85,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		188C0D0424EDB0BC00D7F82D /* PuppyRescue */ = {
+		188C0D0424EDB0BC00D7F82D /* BabyRescue */ = {
 			isa = PBXGroup;
 			children = (
 				188C1C2D24F8742B0060F1F9 /* 04B30.TTF */,
@@ -104,7 +107,7 @@
 				188C0D1424EDB0DA00D7F82D /* LaunchScreen.storyboard */,
 				188C0D1724EDB0DA00D7F82D /* Info.plist */,
 			);
-			path = PuppyRescue;
+			path = BabyRescue;
 			sourceTree = "<group>";
 		};
 		B3AA6863C18B5A0E8C6313D3 /* Frameworks */ = {
@@ -127,9 +130,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		188C0D0124EDB0BC00D7F82D /* PuppyRescue */ = {
+		188C0D0124EDB0BC00D7F82D /* BabyRescue */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 188C0D1A24EDB0DA00D7F82D /* Build configuration list for PBXNativeTarget "PuppyRescue" */;
+			buildConfigurationList = 188C0D1A24EDB0DA00D7F82D /* Build configuration list for PBXNativeTarget "BabyRescue" */;
 			buildPhases = (
 				038F4418AA1088EDF3200363 /* [CP] Check Pods Manifest.lock */,
 				188C0CFE24EDB0BC00D7F82D /* Sources */,
@@ -141,7 +144,7 @@
 			);
 			dependencies = (
 			);
-			name = PuppyRescue;
+			name = BabyRescue;
 			productName = BabyRescue;
 			productReference = 188C0D0224EDB0BC00D7F82D /* Puppy Rescue.app */;
 			productType = "com.apple.product-type.application";
@@ -161,7 +164,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 188C0CFD24EDB0BC00D7F82D /* Build configuration list for PBXProject "PuppyRescue" */;
+			buildConfigurationList = 188C0CFD24EDB0BC00D7F82D /* Build configuration list for PBXProject "BabyRescue" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -174,7 +177,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				188C0D0124EDB0BC00D7F82D /* PuppyRescue */,
+				188C0D0124EDB0BC00D7F82D /* BabyRescue */,
 			);
 		};
 /* End PBXProject section */
@@ -189,6 +192,7 @@
 				188C1C2C24F874020060F1F9 /* CHICORY.ttf in Resources */,
 				188C0D1324EDB0DA00D7F82D /* Assets.xcassets in Resources */,
 				188C1C2E24F8742B0060F1F9 /* 04B30.TTF in Resources */,
+				18DCA853253E533A00876415 /* Default-568h@2x.png in Resources */,
 				188C0D1624EDB0DA00D7F82D /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,7 +437,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		188C0CFD24EDB0BC00D7F82D /* Build configuration list for PBXProject "PuppyRescue" */ = {
+		188C0CFD24EDB0BC00D7F82D /* Build configuration list for PBXProject "BabyRescue" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				188C0D1824EDB0DA00D7F82D /* Debug */,
@@ -442,7 +446,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		188C0D1A24EDB0DA00D7F82D /* Build configuration list for PBXNativeTarget "PuppyRescue" */ = {
+		188C0D1A24EDB0DA00D7F82D /* Build configuration list for PBXNativeTarget "BabyRescue" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				188C0D1B24EDB0DA00D7F82D /* Debug */,
