@@ -32,7 +32,7 @@
 		1813417F24FC3F5500C8BE17 /* GameScene2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene2.swift; sourceTree = "<group>"; };
 		1813418124FC3F6C00C8BE17 /* GameScene3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene3.swift; sourceTree = "<group>"; };
 		1813418324FC42F100C8BE17 /* WinScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinScene.swift; sourceTree = "<group>"; };
-		188C0D0224EDB0BC00D7F82D /* BabyRescue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabyRescue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		188C0D0224EDB0BC00D7F82D /* Puppy Rescue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Puppy Rescue.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		188C0D0524EDB0BC00D7F82D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		188C0D0B24EDB0BD00D7F82D /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		188C0D0D24EDB0BD00D7F82D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -67,7 +67,7 @@
 		188C0CF924EDB0BC00D7F82D = {
 			isa = PBXGroup;
 			children = (
-				188C0D0424EDB0BC00D7F82D /* BabyRescue */,
+				188C0D0424EDB0BC00D7F82D /* PuppyRescue */,
 				188C0D0324EDB0BC00D7F82D /* Products */,
 				EFC5EFDABDC6DE536861FC78 /* Pods */,
 				B3AA6863C18B5A0E8C6313D3 /* Frameworks */,
@@ -77,12 +77,12 @@
 		188C0D0324EDB0BC00D7F82D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				188C0D0224EDB0BC00D7F82D /* BabyRescue.app */,
+				188C0D0224EDB0BC00D7F82D /* Puppy Rescue.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		188C0D0424EDB0BC00D7F82D /* BabyRescue */ = {
+		188C0D0424EDB0BC00D7F82D /* PuppyRescue */ = {
 			isa = PBXGroup;
 			children = (
 				188C1C2D24F8742B0060F1F9 /* 04B30.TTF */,
@@ -104,7 +104,7 @@
 				188C0D1424EDB0DA00D7F82D /* LaunchScreen.storyboard */,
 				188C0D1724EDB0DA00D7F82D /* Info.plist */,
 			);
-			path = BabyRescue;
+			path = PuppyRescue;
 			sourceTree = "<group>";
 		};
 		B3AA6863C18B5A0E8C6313D3 /* Frameworks */ = {
@@ -127,9 +127,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		188C0D0124EDB0BC00D7F82D /* BabyRescue */ = {
+		188C0D0124EDB0BC00D7F82D /* PuppyRescue */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 188C0D1A24EDB0DA00D7F82D /* Build configuration list for PBXNativeTarget "BabyRescue" */;
+			buildConfigurationList = 188C0D1A24EDB0DA00D7F82D /* Build configuration list for PBXNativeTarget "PuppyRescue" */;
 			buildPhases = (
 				038F4418AA1088EDF3200363 /* [CP] Check Pods Manifest.lock */,
 				188C0CFE24EDB0BC00D7F82D /* Sources */,
@@ -141,9 +141,9 @@
 			);
 			dependencies = (
 			);
-			name = BabyRescue;
+			name = PuppyRescue;
 			productName = BabyRescue;
-			productReference = 188C0D0224EDB0BC00D7F82D /* BabyRescue.app */;
+			productReference = 188C0D0224EDB0BC00D7F82D /* Puppy Rescue.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -161,7 +161,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 188C0CFD24EDB0BC00D7F82D /* Build configuration list for PBXProject "BabyRescue" */;
+			buildConfigurationList = 188C0CFD24EDB0BC00D7F82D /* Build configuration list for PBXProject "PuppyRescue" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -174,7 +174,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				188C0D0124EDB0BC00D7F82D /* BabyRescue */,
+				188C0D0124EDB0BC00D7F82D /* PuppyRescue */,
 			);
 		};
 /* End PBXProject section */
@@ -404,8 +404,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = fsalvador.gestion0912.BabyRescue;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = fsalvador.gestion0912.PuppyRescue;
+				PRODUCT_NAME = "Puppy Rescue";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -423,8 +423,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = fsalvador.gestion0912.BabyRescue;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = fsalvador.gestion0912.PuppyRescue;
+				PRODUCT_NAME = "Puppy Rescue";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -433,7 +433,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		188C0CFD24EDB0BC00D7F82D /* Build configuration list for PBXProject "BabyRescue" */ = {
+		188C0CFD24EDB0BC00D7F82D /* Build configuration list for PBXProject "PuppyRescue" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				188C0D1824EDB0DA00D7F82D /* Debug */,
@@ -442,7 +442,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		188C0D1A24EDB0DA00D7F82D /* Build configuration list for PBXNativeTarget "BabyRescue" */ = {
+		188C0D1A24EDB0DA00D7F82D /* Build configuration list for PBXNativeTarget "PuppyRescue" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				188C0D1B24EDB0DA00D7F82D /* Debug */,
